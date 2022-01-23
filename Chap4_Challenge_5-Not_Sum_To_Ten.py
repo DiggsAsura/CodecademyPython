@@ -14,6 +14,15 @@ def not_sum_to_ten(num1, num2):
 		return True
 	else:
 		return False
+
+		
+# Uncomment these function calls to test your not_sum_to_ten function:
+print(not_sum_to_ten(9, -1))
+# should print True
+print(not_sum_to_ten(9, 1))
+# should print False
+#print(not_sum_to_ten(5,5))
+# should print False		
 		
 # This was super easy! I really like these small challenges, rather than BigProject... At least at this
 # point! Great!
