@@ -15,8 +15,7 @@
 # Again, I have a hunch, but I don't see it clear as day. I'm thinking about slicing. 
 
 def remove_middle(lst, start, end):
-	new_lst = lst[:start] + lst[end+1:]
-	
+	new_lst = lst[:start] + lst[end+1:]	
 	return new_lst
 	
 # HOLY MOLY it worked! I do have to admit, this was guesswork, and did not expect it to work out. I still a bit
@@ -26,3 +25,8 @@ def remove_middle(lst, start, end):
 
 #Uncomment the line below when your function is done
 print(remove_middle([4, 8, 15, 16, 23, 42], 1, 3))
+
+
+
+# Note, this could be done even easier. Did not have to make a new variable inside the function!
+# return lst[:start] + lst[end+1]
