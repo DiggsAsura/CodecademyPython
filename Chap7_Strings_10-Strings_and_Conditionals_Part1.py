@@ -29,9 +29,13 @@ def letter_check(word, letter):
 	for i in word:
 		if i == letter:
 			return True
-		else:
+		else: 
 			continue
 	return False
+	
+# the else: continue is totally obsolete. I just had to understand why else: reutnr False didnt work. Got some help
+# and figured it out, now it makes total sense, even the indentation placement of return False. Ofc return False will
+# never be ran if return True will be ran. 	
 	
 print(letter_check("ok", "k"))
 
