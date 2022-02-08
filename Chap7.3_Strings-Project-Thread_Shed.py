@@ -67,6 +67,50 @@
 #        3. Appned the threads sold to thread_sold
 #
 # 12. Print customers, sales and thread_sold to make sure each list is what you are expecting.
+#
+# Determine the total value of the days sales
+#
+# 13. Now we want to know how much Thread Shed made in a day.
+#     First, define a variable called total_sales and set it equal to 0.
+# 
+# 14. Now, consider the list sales. It is a list of strings that we want to sum. In order for us to sum these 
+#     valuse, we will have to remove the $, and set them equal to floats. 
+#     Iterate through sales and for each item, strip off the $, and set them equal to floats. 
+#
+# 15. Print total_sales
+#     How much did we make today?
+# 
+# How much thread of any specific color was sold?
+#
+# 16. Finally, we want to determine how many of each color thread we sold today. Let's start with a single
+#     color, and then we'll generalize it. 
+#     First, print out thread_sold and inspect it.
+# 
+# 17. We see that thread_sold is a list of strings, som are single colors and some are multiple colors
+#     separated by the & character.
+#     The end product we want here is a list that contains an item for each color thread sold, so no strings
+#     that have multiple colors in them. 
+#     First, define an empty list, thread_sold_split.
+#
+# 18. Next, iterate through thread_sold. For each item, check if it is a single color or multiple colors. If it
+#     is a single color, append that color to thread_sold_split
+#     If it is multiple colors, first split the string around the & character and then add each color
+#     individually to thread_sold_split.
+#
+# 19. Great, now we have a list thread_sold_split that contains an entry with the color of every thread sold 
+#     today.
+#     Define a function called color_count that takes one argument, color. The function should iterate through 
+#     thread_sold_split and count the number of times the item is equal to argument, color. Then, it should 
+#     return this count.
+# 
+# 20. Test your new function by running color_count("white")
+#     Your function should return 28
+#
+# 21. Define a list called colors that stores all the colored threads that Thread Shed offers:
+#     colors = ['red','yellow','green','white','black','blue','purple']
+#
+# 22. Now, using the list colors, the string method .format(), and the function color_count, iterate
+#     through thread_sold_split and print a sentence that says how many threads of each color were sold today.
 
 
 daily_sales = \
