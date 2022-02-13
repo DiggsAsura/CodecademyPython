@@ -43,7 +43,7 @@ def decoder(message, offset):
 	for letter in message:
 		if not letter in punct:
 			letter_value = alpha.find(letter)
-			translate_message += alpha[(letter_value + 10) % len(alpha)]
+			translate_message += alpha[(letter_value + offset) % len(alpha)]
 		else:
 			translate_message += letter
 	return translate_message
@@ -53,7 +53,7 @@ def coder(message, offset):
 	for letter in message:
 		if not letter in punct:
 			letter_value = alpha.find(letter)
-			translate_message += alpha[(letter_value - 10) % len(alpha)]
+			translate_message += alpha[(letter_value - offset) % len(alpha)]
 		else:
 			translate_message += letter
 	return translate_message
@@ -65,4 +65,12 @@ print(decoder(first_message, 10))
 print(decoder(second_message, 14))
 
 
-# part 1 and 2 of this off platform project. It's big so I separate them.
+# Part 5 - got a message without offset supplied. We need to brute force it. This will be done iterating over every chars in the alphabet!
+
+coded_message = "vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl tl hulhexmx. px'ee atox mh kxteer lmxi ni hnk ztfx by px ptgm mh dxxi hnk fxlltzxl ltyx."
+
+for i in range(1, 26):
+	print("Offset: " + str(i))
+	print("\t " + decoder(coded_message, i) + "\n")
+
+
