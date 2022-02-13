@@ -87,24 +87,53 @@ hard_keyword = "friends"
 def new_decoder(message, keyword):
 	letter_pointer = 0
 	keyword_final = ""
-	for i in range(0, len(hard_message)):
-		if hard_message[i] in punct:
-			keyword_final += hard_message[i]	
+	for i in range(0, len(message)):
+		if message[i] in punct:
+			keyword_final += message[i]	
 		else:
 			keyword_final += keyword[letter_pointer]
 			letter_pointer = (letter_pointer+1) % len(keyword)
 	translate_message = ""
-	for i in range(0, len(hard_message)):
-		if not hard_message[i] in punct:
-			ln = alpha.find(hard_message[i]) - alpha.find(keyword_final[i])
+	for i in range(0, len(message)):
+		if not message[i] in punct:
+			ln = alpha.find(message[i]) - alpha.find(keyword_final[i])
 			translate_message += alpha[ln % len(alpha)]
 		else:
-			translate_message += hard_message[i]
+			translate_message += message[i]
 	return translate_message
 	
 print(new_decoder(hard_message, hard_keyword))
 
 # ok, the above is just way above my head. Not sure if I'm ever able to do stuff like this... Or will i? lol gdi. Tricky stuff. 
 
-	
+# Last task, do the encoder of Vigenère Cipher.. Should be pretty much opposite, no? 
+
+my_message = "ok, this is crazy hard to wrap my head around..... but let's do this ok?"
+my_keyword = "brainwrinkles"
+
+def new_coder(message, keyword):
+	letter_pointer = 0
+	keyword_final = ""
+	for i in range(0, len(message)):
+		if message[i] in punct:
+			keyword_final += message[i]
+		else:
+			keyword_final += keyword[letter_pointer]
+			letter_pointer = (letter_pointer + 1) % len(keyword)
+	translate_message = ""
+	for i in range(0, len(message)):
+		if message[i] not in punct:
+			ln = alpha.find(message[i]) + alpha.find(keyword_final[i])
+			translate_message += alpha[ln % len(alpha)]
+		else:
+			translate_message += message[i]
+	return translate_message
+
+print(new_coder(my_message, my_keyword))
+
+optional = new_coder(my_message, my_keyword)
+print(new_decoder(new_coder(my_message, my_keyword), my_keyword))
+
+
+
 
