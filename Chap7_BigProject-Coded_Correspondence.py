@@ -134,6 +134,6 @@ print(new_coder(my_message, my_keyword))
 optional = new_coder(my_message, my_keyword)
 print(new_decoder(new_coder(my_message, my_keyword), my_keyword))
 
-
+# OK, i cheesed this AF! Note to self though, i had to change my_message to only lowercase (yea could use .format i guess). I got it wrong so many times, the very last one. But just because i initially started on uppercase.
 
 
