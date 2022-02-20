@@ -1,6 +1,6 @@
 # Chap 9.2 - Dictionaries
 # Using Dictionaries
-# Delete a Key
+# 6. Delete a Key
 
 # Delete a Key
 #
