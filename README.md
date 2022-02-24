@@ -1,8 +1,13 @@
 # CodecademyPython
-Learning Python! My takes on the Codecademy's Python course
+Learning Python! My takes on the Codecademy's Python course. 
 
-As title and described above. Diving into Python with Codecademy and will dump most of it here. I did run the first 3 already, so might just be from chap 4 and up. 
----
-Edit:
-As I started to name all these files, unaware of how the course structure was built up, i did see it smart to rename - not only once but several times. This makes
-this folder look very messy. I will probably take my time to clean it up a bit better at the end. 
+## Todos 
+* Rename files...
+Yea this is a mess. I started naming files a bit random, before i knew the 
+course layout on Codecademy. 
+* Make use of git
+Hah, yea, been using GitHub as "dropbox", with literally uploading files 
+manually. Doing the course on git/github as of lat feb, and will continue 
+to use that from now (feb 24 2022). Now it should be easier to do the re-
+naming. 
+
