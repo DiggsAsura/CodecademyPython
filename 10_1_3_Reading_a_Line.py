@@ -8,3 +8,6 @@ with open("just_the_first.txt") as first_line_doc:
 
 print(first_line)
 print(second_line)
+
+# Note.
+# Theres a difference between readline() and readlines() !
