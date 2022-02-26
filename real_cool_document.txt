@@ -1,4 +1,0 @@
-This is a test. 
-This document is together with the file 
-10_1_1_Reading_a_File.py
-
