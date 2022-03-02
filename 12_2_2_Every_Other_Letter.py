@@ -30,3 +30,13 @@ print(every_other_letter(""))
 
 # Ok this sucked a bit, I just could not remember how to iterate every other.
 # Kinda makes sense when I read the solution but a bit disappointed really.
+
+# In order to alternate which character is added to the every_other 
+# string, we use a range of indices which starts at index 0 (the beginning 
+# of our word) and ends at the end of our word. The third parameter in the 
+# range function determines what value to increment by. In this case, we 
+# want to increment by 2 in order to get every other letter.
+#
+# Another way to loop through all indices of our original string, 
+# but only add the letters that correspond to an even index. As a 
+# challenge, try solving this problem that way! (MODULO for sure)
