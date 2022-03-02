@@ -28,3 +28,11 @@ def x_length_words(sentence, x):
 print(x_length_words("i like apples", 2))
 print(x_length_words("he likes apples", 2))
 
+# We can use the split function with the space character provided in 
+# order to get an array of all of the words in the sentence. Next, we 
+# use the in keyword in order to loop through every element in our array 
+# of words. We check the length of each word and compare it against x to 
+# see if it is shorter. If any of the words in the array are shorter then 
+# we immediately return False and end the function. If we make through all 
+# of the words without returning False, we know we should return True since 
+# all of the word’s lengths were longer than x. 
