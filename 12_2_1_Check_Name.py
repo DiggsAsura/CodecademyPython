@@ -33,9 +33,10 @@ from tabnanny import check
 
 
 def check_for_name(sentence, name): 
-  if name.lower() in sentence.lower():
-    return True
-  return False
+  #if name.lower() in sentence.lower():
+  #  return True
+  #return False
+  return name.lower() in sentence.lower()
 
 print(check_for_name("My name is Kenneth", "Kenneth"))
 print(check_for_name("My name is kenneth", "KENNETH"))
