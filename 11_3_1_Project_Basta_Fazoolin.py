@@ -69,3 +69,27 @@ print(new_installement)
     
 print(flagship_store.available_menus(12))
 print(new_installement.available_menus(17))
+
+
+# Last third of the project. I am not sure if it's me thats slow or what - but here
+# the tasks are kinda clear as mud, checked the video - and he kinda just go 
+# through it in somewhat messy way. Oh well. 
+
+# Arepa 
+class Business:
+    def __init__(self, name, franchises):
+        self.name = name
+        self.franchises = franchises
+        
+basta = Business("Basta Fazoolin' with my Heart", [flagship_store, new_installement])
+
+arepas_items = {'arepa pabellon': 7.00, 'pernil arepa': 8.50, 'guayanes arepa': 8.00, 'jamon arepa': 7.50}
+arepas_menu = Menu("Take a' Arepa", arepas_items, 10, 20)
+arepas_place = Franchise("189 Fitzgerald Avenue", [arepas_menu])
+arepa = Business("Take a' Arepa", [arepas_place])
+
+print(arepa.franchises[0].menus[0])
+
+
+# Well half of this was pretty easy, half was kinda messy. I guess I'm going to 
+# work alot more with classes, so I hope I will learn it somehow. 
