@@ -1,7 +1,14 @@
 # CodecademyPython
 Learning Python! My takes on the Codecademy's Python course. 
 
-## Deleted and restored...
+## Completed
+January 12 2022 to March 4 2022. Finished Codecademy Learn Python 3 course. I took my sweet time,
+but it's a marathon, not a sprint. I do a fair chunk every day. I feel the 
+course was good and I have a good overview of the programming language.
+
+I will continue with the Intermediate Python course, in another repo.  
+
+### Deleted and restored...
 Did a huuuge mistake with a git rm *, as i hoped it would only remove the files
 I had removed from the working directoy (which was marked as deleted on git status). It def didnt, and removed everything in my entire folder. 
 Luckily I did a old school backup on my local computer before I did this command. 
